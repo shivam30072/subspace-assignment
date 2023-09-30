@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 const apiReq = async () => {
   try {
     const options = {
@@ -8,11 +10,11 @@ const apiReq = async () => {
       },
     };
 
-    const response = await fetch(
+    const response = await axios.get(
       "https://intent-kit-16.hasura.app/api/rest/blogs",
       options
     );
-    const data = await response.json();
+    const data = response.data;
     return data;
   } catch (error) {
     console.log("error occured", error);
