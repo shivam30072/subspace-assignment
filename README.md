@@ -7,4 +7,4 @@
 
 
 <h1>deployed link</h1>
-https://subspace-assignment-rmsg.onrender.com/api/blog-stats
+https://subspace-assignment-production.up.railway.app/
